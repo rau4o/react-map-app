@@ -16,6 +16,7 @@ export default function LocationSearch({ onPlaceClick }: LocationSearchProps) {
 
         const results = await search(term);
         setPlaces(results);
+        setTerm('');
     }
 
     return (
